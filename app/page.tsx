@@ -688,7 +688,7 @@ export default function Home() {
                     <div>
                       <h3 className="font-semibold text-xl">Contact</h3>
                       <p className="text-white/80 mt-2">
-                        Phone: +191 9205688890
+                        Phone: +91 9205688890
                         <br />
                         Email: er.rajasinghcse@gmail.com
                       </p>
