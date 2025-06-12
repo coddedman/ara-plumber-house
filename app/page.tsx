@@ -1263,7 +1263,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start gap-2">
                   <Phone className="h-5 w-5 shrink-0 text-teal-300" />
-                  <span className="text-sm text-white/70">+91 9205688890,+91 9661815080,+91 ,  
+                  <span className="text-sm text-white/70">+91 9205688890,+91 9661815080,+91 8770733490,  
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
