@@ -41,6 +41,11 @@ const getProductById = (id: string) => {
   }
 }
 
+export async function generateStaticParams() {
+  const productIds = ['1', '2', '3'] // Replace with real IDs if needed
+  return productIds.map((id) => ({ id }))
+}
+
 export default function ProductPage({ params }: { params: { id: string } }) {
   const product = getProductById(params.id)
 
