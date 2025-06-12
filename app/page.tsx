@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import HeroAnimation from "@/components/hero-animation"
 import CommonSlider from "@/components/ui/CommonSlider"
+import Header from "@/components/ui/Header"
 // import pic from "../public/images/Logo.png"
 // Sample featured products data (Jaquar-inspired)
 const featuredProducts = [
@@ -178,106 +179,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-white to-purple-50">
-      <header className="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-purple-100">
-        <div className="container flex h-20 items-center justify-between px-4 md:px-6">
-          <a
-            href="#hero"
-            onClick={(e) => {
-              e.preventDefault()
-              scrollToSection("hero")
-            }}
-            className="flex items-center gap-2"
-          >
-            <div className="relative w-10 h-10 rounded-full bg-gradient-to-r from-purple-600 to-blue-500 p-0.5 shadow-lg">
-              <div className="absolute inset-0 rounded-full overflow-hidden">
-                <Image
-                   src="/images/Logo.png"
-                  alt="Ara Plumber House Logo"
-                  width={32}
-                  height={32}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-            <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500">
-              Ara Plumber House
-            </span>
-          </a>
-          <nav className="hidden md:flex gap-6">
-            <a
-              href="#services"
-              onClick={(e) => {
-                e.preventDefault()
-                scrollToSection("services")
-              }}
-              className="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-gradient-to-r from-purple-600 to-blue-500 after:transition-all after:duration-300"
-            >
-              Services
-            </a>
-            <a
-              href="#gallery"
-              onClick={(e) => {
-                e.preventDefault()
-                scrollToSection("gallery")
-              }}
-              className="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-gradient-to-r from-purple-600 to-blue-500 after:transition-all after:duration-300"
-            >
-              Gallery
-            </a>
-            <a
-              href="#about"
-              onClick={(e) => {
-                e.preventDefault()
-                scrollToSection("about")
-              }}
-              className="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-gradient-to-r from-purple-600 to-blue-500 after:transition-all after:duration-300"
-            >
-              About
-            </a>
-            <a
-              href="#contact"
-              onClick={(e) => {
-                e.preventDefault()
-                scrollToSection("contact")
-              }}
-              className="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-gradient-to-r from-purple-600 to-blue-500 after:transition-all after:duration-300"
-            >
-              Contact
-            </a>
-          </nav>
-          <div className="flex items-center gap-4">
-            <a
-              href="#contact"
-              onClick={(e) => {
-                e.preventDefault()
-                scrollToSection("contact")
-              }}
-            >
-              <Button className="hidden md:flex bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 shadow-md hover:shadow-lg transition-all duration-300 animate-pulse">
-                Get a Quote
-              </Button>
-            </a>
-            <Button variant="outline" size="icon" className="md:hidden border-purple-200">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-5 w-5"
-              >
-                <line x1="4" x2="20" y1="12" y2="12" />
-                <line x1="4" x2="20" y1="6" y2="6" />
-                <line x1="4" x2="20" y1="18" y2="18" />
-              </svg>
-            </Button>
-          </div>
-        </div>
-      </header>
+    <Header/>
       <main className="flex-1">
         {/* Hero Section */}
         <section id="hero" className="w-full py-12 md:py-24 lg:py-32 relative overflow-hidden">
